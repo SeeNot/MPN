@@ -1,8 +1,0 @@
-@import "tailwindcss";
-
-body {
-  background: #2B2D35;
-background: linear-gradient(180deg, rgba(43, 45, 53, 1) 44%, rgba(0, 0, 0, 1) 100%);
-color: white;
-font-family: 'Inria Sans', sans-serif;
-}
