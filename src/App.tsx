@@ -1,14 +1,19 @@
-import { createBrowserRouter } from "react-router";
+import {createHashRouter} from "react-router";
 import { RouterProvider } from "react-router/dom";
-import Test from "./pages/test.tsx"
+import Login from "./pages/LogIn.tsx";
+import HomePage from "./pages/HomePage.tsx";
 
 function App() {
 
-    const router = createBrowserRouter([
+    const router = createHashRouter([
         {
             path: "/",
-            element: <Test/>,
+            element: <HomePage/>,
         },
+        {
+            path: "/login",
+            element: <Login/>,
+        }
     ]);
 
     return (
