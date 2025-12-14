@@ -26,7 +26,7 @@ function RootLayout() {
 
 					window.history.replaceState({}, document.title, "/");
 
-					navigate("/dashboard");
+					navigate("/");
 				})
 				.catch((err) => {
 					console.error("Login Failed:", err);
