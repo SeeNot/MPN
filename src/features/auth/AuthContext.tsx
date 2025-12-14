@@ -1,4 +1,10 @@
-import { createContext, type ReactNode, useContext, useState } from "react";
+import {
+	createContext,
+	type ReactNode,
+	useCallback,
+	useContext,
+	useState,
+} from "react";
 
 // Define the shape of your context
 interface AuthContextType {
@@ -14,15 +20,15 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 		return localStorage.getItem("spotify_access_token");
 	});
 
-	const login = (newToken: string) => {
+	const login = useCallback((newToken: string) => {
 		localStorage.setItem("spotify_access_token", newToken);
 		setToken(newToken);
-	};
+	}, []);
 
-	const logout = () => {
+	const logout = useCallback(() => {
 		localStorage.removeItem("spotify_access_token");
 		setToken(null);
-	};
+	}, []);
 
 	return (
 		<AuthContext.Provider value={{ token, login, logout }}>

@@ -33,7 +33,7 @@ function RootLayout() {
 					navigate("/login");
 				});
 		}
-	}, [navigate]);
+	}, [navigate, login, token]);
 
 	return <Outlet />;
 }

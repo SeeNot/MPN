@@ -1,14 +1,17 @@
 export async function getAccessToken(code: string) {
 	const clientId: string = import.meta.env.VITE_SPOTIFY_CLIENT_ID;
 	const redirectUri: string = import.meta.env.VITE_SPOTIFY_REDIRECT_URI;
-	const verifier = localStorage.getItem("verifier");
+	const verifier: string | null = localStorage.getItem("verifier");
+	if (!verifier) {
+		throw new Error("Code verifier not found. Please try logging in again.");
+	}
 
 	const params = new URLSearchParams();
 	params.append("client_id", clientId);
 	params.append("grant_type", "authorization_code");
 	params.append("code", code);
 	params.append("redirect_uri", redirectUri);
-	params.append("code_verifier", verifier!);
+	params.append("code_verifier", verifier);
 
 	const result = await fetch("https://accounts.spotify.com/api/token", {
 		method: "POST",

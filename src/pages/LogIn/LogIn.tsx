@@ -11,11 +11,12 @@ function Login() {
 				<img
 					src="/src/assets/Login/pic.jpg"
 					className="border border-white rounded-full w-32 h-32 mb-10"
-					alt="Profile picture"
+					alt="Profile"
 				/>
 			</div>
 
 			<button
+				type="button"
 				onClick={handleSpotifyLogin}
 				className="border border-white rounded-full p-2 w-56 mb-5 text-2xl cursor-pointer"
 			>
