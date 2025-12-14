@@ -1,30 +1,30 @@
 {
-  "name": "mpn",
-  "private": true,
-  "version": "0.1.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "tauri": "tauri"
-  },
-  "dependencies": {
-    "@tailwindcss/vite": "^4.1.18",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "@tauri-apps/api": "^2.9.1",
-    "@tauri-apps/plugin-opener": "^2.5.2",
-    "react-router": "^7.10.1",
-    "tailwindcss": "^4.1.18"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^2.3.8",
-    "@types/react": "^18.3.27",
-    "@types/react-dom": "^18.3.7",
-    "@vitejs/plugin-react": "^4.7.0",
-    "typescript": "^5.6.3",
-    "vite": "^6.4.1",
-    "@tauri-apps/cli": "^2.9.6"
-  }
+	"name": "mpn",
+	"private": true,
+	"version": "0.1.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"tauri": "tauri"
+	},
+	"dependencies": {
+		"@tailwindcss/vite": "^4.1.18",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"@tauri-apps/api": "^2.9.1",
+		"@tauri-apps/plugin-opener": "^2.5.2",
+		"react-router": "^7.10.1",
+		"tailwindcss": "^4.1.18"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.3.8",
+		"@types/react": "^18.3.27",
+		"@types/react-dom": "^18.3.7",
+		"@vitejs/plugin-react": "^4.7.0",
+		"typescript": "^5.6.3",
+		"vite": "^6.4.1",
+		"@tauri-apps/cli": "^2.9.6"
+	}
 }
