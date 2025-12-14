@@ -3,10 +3,15 @@ import { Outlet, useNavigate } from "react-router";
 import { useAuth } from "../features/auth/AuthContext.tsx";
 import { getAccessToken } from "./LogIn/auth.service.ts";
 
-// This component wraps EVERY page in your app
 function RootLayout() {
 	const { token, login } = useAuth();
 	const navigate = useNavigate();
+
+	useEffect(() => {
+		if (token) {
+			navigate("/");
+		}
+	}, [token, navigate]);
 
 	useEffect(() => {
 		if (token) {
@@ -25,8 +30,6 @@ function RootLayout() {
 					login(access_token);
 
 					window.history.replaceState({}, document.title, "/");
-
-					navigate("/");
 				})
 				.catch((err) => {
 					console.error("Login Failed:", err);

@@ -3,6 +3,7 @@
   "specifiers": {
     "npm:@biomejs/biome@^2.3.8": "2.3.8",
     "npm:@tailwindcss/vite@^4.1.18": "4.1.18_vite@6.4.1__picomatch@4.0.3",
+    "npm:@tanstack/react-query@^5.90.12": "5.90.12_react@18.3.1",
     "npm:@tauri-apps/api@^2.9.1": "2.9.1",
     "npm:@tauri-apps/cli@^2.9.6": "2.9.6",
     "npm:@tauri-apps/plugin-opener@^2.5.2": "2.5.2",
@@ -610,6 +611,16 @@
         "vite"
       ]
     },
+    "@tanstack/query-core@5.90.12": {
+      "integrity": "sha512-T1/8t5DhV/SisWjDnaiU2drl6ySvsHj1bHBCWNXd+/T+Hh1cf6JodyEYMd5sgwm+b/mETT4EV3H+zCVczCU5hg=="
+    },
+    "@tanstack/react-query@5.90.12_react@18.3.1": {
+      "integrity": "sha512-graRZspg7EoEaw0a8faiUASCyJrqjKPdqJ9EwuDRUF9mEYJ1YPczI9H+/agJ0mOJkPCJDk0lsz5QTrLZ/jQ2rg==",
+      "dependencies": [
+        "@tanstack/query-core",
+        "react"
+      ]
+    },
     "@tauri-apps/api@2.9.1": {
       "integrity": "sha512-IGlhP6EivjXHepbBic618GOmiWe4URJiIeZFlB7x3czM0yDHHYviH1Xvoiv4FefdkQtn6v7TuwWCRfOGdnVUGw=="
     },
@@ -1121,6 +1132,7 @@
       "dependencies": [
         "npm:@biomejs/biome@^2.3.8",
         "npm:@tailwindcss/vite@^4.1.18",
+        "npm:@tanstack/react-query@^5.90.12",
         "npm:@tauri-apps/api@^2.9.1",
         "npm:@tauri-apps/cli@^2.9.6",
         "npm:@tauri-apps/plugin-opener@^2.5.2",

@@ -6,7 +6,6 @@ import {
 	useState,
 } from "react";
 
-// Define the shape of your context
 interface AuthContextType {
 	token: string | null;
 	login: (token: string) => void;
@@ -21,6 +20,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 	});
 
 	const login = useCallback((newToken: string) => {
+		if (!newToken || newToken === "undefined") return;
 		localStorage.setItem("spotify_access_token", newToken);
 		setToken(newToken);
 	}, []);
