@@ -10,22 +10,22 @@
 		"tauri": "tauri"
 	},
 	"dependencies": {
-		"@tailwindcss/vite": "^4.1.18",
+		"@tailwindcss/vite": "^4.3.1",
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1",
-		"@tauri-apps/api": "^2.9.1",
-		"@tauri-apps/plugin-opener": "^2.5.2",
-		"react-router": "^7.10.1",
-		"tailwindcss": "^4.1.18"
+		"@tauri-apps/api": "^2.11.1",
+		"@tauri-apps/plugin-opener": "^2.5.4",
+		"react-router": "^7.18.0",
+		"tailwindcss": "^4.3.1"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^2.3.8",
-		"@tanstack/react-query": "^5.90.12",
-		"@types/react": "^18.3.27",
+		"@biomejs/biome": "^2.5.1",
+		"@tanstack/react-query": "^5.101.1",
+		"@types/react": "^18.3.31",
 		"@types/react-dom": "^18.3.7",
 		"@vitejs/plugin-react": "^4.7.0",
-		"typescript": "^5.6.3",
-		"vite": "^6.4.1",
-		"@tauri-apps/cli": "^2.9.6"
+		"typescript": "^5.9.3",
+		"vite": "^6.4.3",
+		"@tauri-apps/cli": "^2.11.3"
 	}
 }
